@@ -1,15 +1,17 @@
 // ---- Helplines: EDIT THESE with real numbers for your country and verify them on an official source ----
 const helplines = [
-  { name: "National suicide and crisis helpline", number: "", note: "Add your country's number" },
-  { name: "Mental health support line", number: "", note: "Add your country's number" },
-  { name: "Emergency services", number: "", note: "Add your local emergency number" }
+  { name: "National suicide and crisis helpline", number: "", note: "+233 244 846 701" },
+  { name: "Mental health support line", number: "", note: "0800 678 678" },
+  { name: "Emergency services", number: "", note: "National Emergency SOS: 112" }
 ];
+
 const list = document.getElementById("helplines");
+
 helplines.forEach(h => {
   const li = document.createElement("li");
   li.className = "help";
   const has = h.number.trim() !== "";
-  li.innerHTML = `<div><strong>${h.name}</strong><br><span class="muted">${has ? "Free and confidential where available" : h.note + " in js/support.js"}</span></div>` +
+  li.innerHTML = `<div><strong>${h.name}</strong><br><span class="muted">${has ? "Free and confidential where available" : h.note}</span></div>` +
     (has ? `<span class="num">${h.number}</span><span><a class="btn" href="tel:${h.number.replace(/\s/g, "")}">Call</a> <button class="btn ghost" data-copy="${h.number}">Copy number</button></span>` : "");
   list.appendChild(li);
 });

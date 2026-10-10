@@ -1,23 +1,35 @@
 // ---- Product data (edit here) ----
 const products = [
-  { id: "pebble-ball", name: "Pebble Ball", cat: "Hands", price: 8, img: "images/pebble-ball.svg",
+  {
+    id: "pebble-ball", name: "Pebble Ball", cat: "Hands", price: 8, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTJjoTebxLKATRNIfTYRlsJdinx7B5BCoNXD_CDTL5_A&s=10",
     text: "A soft, slow-rebound stress ball with a smooth pebble shape.",
-    use: "Squeeze for 5 seconds, release for 5. Repeat 10 times." },
-  { id: "knead-putty", name: "Knead Putty", cat: "Hands", price: 10, img: "images/knead-putty.svg",
+    use: "Squeeze for 5 seconds, release for 5. Repeat 10 times."
+  },
+  {
+    id: "knead-putty", name: "Knead Putty", cat: "Hands", price: 10, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBN0zRMQsK_W0W2bMxMasRBnebcjvm45_NJOXvuNTCig&s=10",
     text: "Warm, quiet putty you can stretch, fold and press.",
-    use: "Keep your hands busy during calls or study sessions." },
-  { id: "spin-ring", name: "Spin Ring", cat: "Focus", price: 12, img: "images/spin-ring.svg",
+    use: "Keep your hands busy during calls or study sessions."
+  },
+  {
+    id: "spin-ring", name: "Spin Ring", cat: "Focus", price: 12, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaE5t10FTfjOVRz-QWtFmGCFTlC-uylXGSiePCAsB7Qg&s=10",
     text: "A stainless steel ring with a spinning outer band.",
-    use: "Spin slowly with your thumb when you need to stay seated and focused." },
-  { id: "lavender-sachet", name: "Lavender Sachet", cat: "Scent", price: 7, img: "images/lavender-sachet.svg",
+    use: "Spin slowly with your thumb when you need to stay seated and focused."
+  },
+  {
+    id: "lavender-sachet", name: "Lavender Sachet", cat: "Scent", price: 7, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJWCDDHROFzxVCZqcPfswIflGdeKVvAC31JGtxuSm4_w&s=10",
     text: "Dried lavender in a washable cotton pouch.",
-    use: "Squeeze to release the scent, breathe in for 4 counts, out for 6." },
-  { id: "weighted-pad", name: "Weighted Lap Pad", cat: "Comfort", price: 35, img: "images/weighted-pad.svg",
+    use: "Squeeze to release the scent, breathe in for 4 counts, out for 6."
+  },
+  {
+    id: "weighted-pad", name: "Weighted Lap Pad", cat: "Comfort", price: 35, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW4kWt8mkYH2K25x5ydw1hH0drRwwr9Z2ciRm2jWvnOg&s=10",
     text: "A 2 kg lap pad that feels like a steady hug.",
-    use: "Rest it on your lap while reading, or on your chest while winding down." },
-  { id: "focus-cube", name: "Focus Cube", cat: "Focus", price: 14, img: "images/focus-cube.svg",
+    use: "Rest it on your lap while reading, or on your chest while winding down."
+  },
+  {
+    id: "focus-cube", name: "Focus Cube", cat: "Focus", price: 14, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTs6FVzA7ZBsQ4NEkhzSVS2twgMhP7jCpI3i9PIa-AXg&s=10",
     text: "A silent cube with clicky, rolling and spinning sides.",
-    use: "Use it during meetings instead of tapping your pen." }
+    use: "Use it during meetings instead of tapping your pen."
+  }
 ];
 const users = {
   "Students": "Keep a putty or ball in your bag. Squeeze before an exam and during revision breaks. Quiet products mean no trouble in class.",
@@ -25,7 +37,7 @@ const users = {
   "Parents": "Weighted pads and putty make a calm corner for kids and adults alike. Try a shared 'squeeze and breathe' minute after school.",
   "Night-shift workers": "The weighted pad and sachet help your body switch off when you get home."
 };
-const vid = { id: "REPLACE_WITH_YOUTUBE_ID" }; // e.g. "dQw4w9WgXcQ"
+const vid = { id: "HcVAuHxEQfQ" };
 
 // ---- Filter + render ----
 const grid = document.getElementById("productGrid");
