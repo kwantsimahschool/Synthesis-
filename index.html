@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Unclench</title>
+    <meta name="description" content="Unclench makes small, tactile stress relievers for busy people.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Figtree:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="wrap bar">
+            <a class="brand" href="index.html">Unclench</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+            <nav id="nav" aria-label="Main"><a href="index.html">Home</a><a href="about.html">About</a><a
+                    href="features.html">Products</a><a href="pricing.html">Pricing</a><a
+                    href="careers.html">Careers</a><a href="support.html">Support</a></nav>
+        </div>
+    </header>
+    <main id="main">
+
+        <section class="hero">
+            <div class="wrap">
+                <div>
+                    <h1>Small things to hold when everything feels like a lot.</h1>
+                    <p class="lead">Unclench makes pocket-sized stress relievers: squeezable, kneadable, spinnable and
+                        soothing. Pick one up between meetings, during exams, or at 2 a.m.</p>
+                    <p><a class="btn" href="features.html">Browse the products</a> <a class="btn ghost"
+                            href="pricing.html">See pricing</a></p>
+                </div>
+                <div class="ball-stage">
+                    <button class="ball" id="ball" aria-label="Squeeze the stress ball"></button>
+                    <div class="counter"><span id="count">0</span> squeezes</div>
+                    <p class="ball-msg" id="ballMsg" aria-live="polite">Press and hold. Go on.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section tint">
+            <div class="wrap split">
+                <div>
+                    <h2>Our mission</h2>
+                    <p>To put a calming object in the hands of anyone who needs one, at a price that does not add to the
+                        stress.</p>
+                </div>
+                <div>
+                    <h2>Our vision</h2>
+                    <p>A world where taking a two-minute reset is as normal as checking your phone.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap">
+                <h2>Why people keep one on their desk</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Made for hands</h3>
+                        <p>Soft-touch, quiet materials that feel good and do not make noise in a lecture hall or an
+                            office.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Skin-safe and durable</h3>
+                        <p>Non-toxic fillings and stitching tested for thousands of squeezes.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Starts working in a minute</h3>
+                        <p>Slow squeezing, steady breathing and a calming scent help your body settle quickly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section tint">
+            <div class="wrap">
+                <h2>What customers say</h2>
+                <div class="slider" id="slider" aria-roledescription="carousel">
+                    <blockquote id="slideText"></blockquote>
+                    <div class="ctrl"><button id="prev" aria-label="Previous testimonial">Previous</button><button
+                            id="next" aria-label="Next testimonial">Next</button><span id="slideWho"></span></div>
+                </div>
+                <p class="muted"><small>Testimonials are fictional examples written for this project.</small></p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap">
+                <h2>Our partners and sponsors</h2>
+                <ul class="sponsors">
+                    <li>Calm Campus Initiative</li>
+                    <li>GreenFill Materials</li>
+                    <li>OpenMind Fund</li>
+                    <li>Daily Pause Cafe</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section tint">
+            <div class="wrap split">
+                <div>
+                    <h2>Get a weekly pause</h2>
+                    <p>One short email each week: a breathing tip, a new product, and a discount code. Unsubscribe any
+                        time.</p>
+                </div>
+                <form id="subForm" novalidate>
+                    <div class="field"><label for="subEmail">Email address</label><input id="subEmail" type="email"
+                            autocomplete="email" placeholder="you@example.com">
+                        <p class="error" id="subError" aria-live="polite"></p>
+                    </div>
+                    <button class="btn" type="submit">Subscribe</button>
+                    <p id="subOk" class="success" hidden></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="cols">
+                <div>
+                    <h3>Unclench</h3>
+                    <p>Small things to hold when everything feels like a lot.</p>
+                </div>
+                <div>
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="features.html">Products</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Need to talk to someone?</h3>
+                    <p><a href="support.html">Find a helpline</a></p>
+                </div>
+            </div>
+            <small>&copy; <span id="year">2026</span> Unclench. A student project - all company details are
+                fictional.</small>
+        </div>
+    </footer>
+    <script src="js/main.js" defer></script>
+    <script src="js/home.js" defer></script>
+</body>
+
+</html>

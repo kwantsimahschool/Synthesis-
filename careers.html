@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Careers | Unclench</title>
+    <meta name="description" content="Unclench makes small, tactile stress relievers for busy people.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Figtree:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="wrap bar">
+            <a class="brand" href="index.html">Unclench</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+            <nav id="nav" aria-label="Main"><a href="index.html">Home</a><a href="about.html">About</a><a
+                    href="features.html">Products</a><a href="pricing.html">Pricing</a><a
+                    href="careers.html">Careers</a><a href="support.html">Support</a></nav>
+        </div>
+    </header>
+    <main id="main">
+
+        <section class="section">
+            <div class="wrap">
+                <h1>Work with us</h1>
+                <p class="lead">We hire employees and interns. Choose a role to start your application.</p>
+                <div class="cards" id="roles"></div>
+            </div>
+        </section>
+
+        <section class="section tint">
+            <div class="wrap">
+                <h2>Application form</h2>
+                <form id="appForm" novalidate>
+                    <div class="field"><label for="role">Applying as</label><select id="role" required>
+                            <option value="">Select a role</option>
+                            <option>Customer support (employee)</option>
+                            <option>Product designer (employee)</option>
+                            <option>Marketing intern</option>
+                        </select>
+                        <p class="error"></p>
+                    </div>
+                    <div class="grid-2">
+                        <div class="field"><label for="name">Full name</label><input id="name" autocomplete="name"
+                                required>
+                            <p class="error"></p>
+                        </div>
+                        <div class="field"><label for="age">Age</label><input id="age" type="number" inputmode="numeric"
+                                required>
+                            <p class="error"></p>
+                        </div>
+                        <div class="field"><label for="exp">Work experience (years)</label><input id="exp" type="number"
+                                step="0.5" min="0" required>
+                            <p class="error"></p>
+                        </div>
+                        <div class="field"><label for="nation">Nationality</label><input id="nation" required>
+                            <p class="error"></p>
+                        </div>
+                    </div>
+                    <div class="field"><label for="address">Address</label><input id="address"
+                            autocomplete="street-address" required>
+                        <p class="error"></p>
+                    </div>
+                    <div class="grid-2">
+                        <div class="field"><label for="home">Home phone</label><input id="home" type="tel"
+                                placeholder="e.g. 0302 000 000" required>
+                            <p class="error"></p>
+                        </div>
+                        <div class="field"><label for="mobile">Mobile phone</label><input id="mobile" type="tel"
+                                placeholder="e.g. 024 000 0000" required>
+                            <p class="error"></p>
+                        </div>
+                    </div>
+                    <div class="field"><label for="reason">Why do you want to join Unclench?</label><textarea
+                            id="reason" rows="5" required></textarea>
+                        <p class="muted" id="wordCount">0 / 150 words (minimum 30)</p>
+                        <p class="error"></p>
+                    </div>
+                    <div class="field"><label class="check"><input type="checkbox" id="terms"><span>I confirm the
+                                information is true and I agree to the <a href="#termsText">terms of
+                                    agreement</a>.</span></label></div>
+                    <p id="termsText" class="muted"><small>Terms: your details are used only to process this application
+                            and deleted after 6 months. This is a demo form and nothing is sent anywhere.</small></p>
+                    <button class="btn" id="submitBtn" type="submit" disabled>Submit application</button>
+                    <div id="result" class="success" hidden tabindex="-1"></div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="cols">
+                <div>
+                    <h3>Unclench</h3>
+                    <p>Small things to hold when everything feels like a lot.</p>
+                </div>
+                <div>
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="features.html">Products</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Need to talk to someone?</h3>
+                    <p><a href="support.html">Find a helpline</a></p>
+                </div>
+            </div>
+            <small>&copy; <span id="year">2026</span> Unclench. A student project - all company details are
+                fictional.</small>
+        </div>
+    </footer>
+    <script src="js/main.js" defer></script>
+    <script src="js/careers.js" defer></script>
+</body>
+
+</html>
